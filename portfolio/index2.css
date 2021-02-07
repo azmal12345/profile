@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap");
+:root {
+  --red: red;
+  --green: green;
+  --yellow: yellow;
+  --lime: lime;
+  --blue: blue;
+  --white: white;
+  --black: black;
+  --ornage: orange;
+  --skyblue: skyblue;
+  --purple: purple;
+  --noneColor: #ff0066;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #111111;
+  color: var(--white);
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 100%;
+  background-color: #111111;
+  padding: 2rem 3rem;
+  z-index: 9999;
+}
+
+.bars {
+  float: right;
+  margin-top: -15px;
+  margin-right: -15px;
+  cursor: pointer;
+  display: none;
+}
+
+.bars .line {
+  width: 35px;
+  height: 3px;
+  background-color: var(--ornage);
+  margin: 5px 0;
+}
+
+ul {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul li {
+  margin: -10px 1rem;
+  list-style: none;
+  font-weight: 600;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+ul li a:hover {
+  text-decoration: none;
+  color: var(--ornage);
+}
+
+img {
+  cursor: pointer;
+}
+
+section {
+  margin-top: 90px;
+  width: 100%;
+  max-width: 100%;
+  padding: 2rem 3rem;
+}
+
+.projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projects_text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 200px;
+          flex: 1 1 200px;
+  margin: 10px;
+  border: 5px solid var(--ornage);
+  position: relative;
+}
+
+.projects_text .btn {
+  border: none;
+  outline: none;
+  background-color: var(--ornage);
+  color: var(--white);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.projects_text .btn:hover {
+  background-color: var(--black);
+  color: var(--white);
+}
+
+.projects_text img {
+  width: 100%;
+}
+
+.projects_text video, .projects_text source {
+  width: 100%;
+  height: 228.50px;
+}
+
+/* *************************** end ***************************  */
+@media screen and (max-width: 650px) {
+  .bars {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    right: 0;
+    border-top: 2px solid var(--white);
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    display: inline-block;
+    text-align: center;
+    background-color: #111111;
+    color: var(--white);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: 99999;
+  }
+  ul.active {
+    top: 60px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  ul li {
+    margin: 4rem 1rem;
+    list-style: none;
+    font-weight: 600;
+  }
+}
+
+section {
+  padding: 2rem 1rem;
+}
+
+/* *************************** end ***************************  */
+/*# sourceMappingURL=index2.css.map */

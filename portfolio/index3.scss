@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap');
+:root{
+    --red: red;
+    --green: green;
+    --yellow: yellow;
+    --lime: lime;
+    --blue: blue;
+    --white: white;
+    --black: black;
+    --ornage: orange;
+    --skyblue: skyblue;
+    --purple: purple;
+    --noneColor: #ff0066;
+}
+
+html,body{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #111111;
+    color: var(--white);
+}
+
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    background-color: #111111;
+    padding: 2rem 3rem;
+    z-index: 9999;
+}
+
+.bars{
+    float: right;
+    margin-top: -15px;
+    margin-right: -15px;
+    cursor: pointer;
+    display: none;
+
+    .line{
+        width: 35px;
+        height: 3px;
+        background-color: var(--ornage);
+        margin: 5px 0;
+    }
+}
+
+ul{
+    float: right;
+    display: flex;
+
+    li{
+        margin: -10px 1rem;
+        list-style: none;
+        font-weight: 600;
+
+        a{
+            text-decoration: none;
+            color: var(--white);
+            font-size: 1rem;
+            text-transform: uppercase;
+
+            &:hover{
+            text-decoration: none;
+            color: var(--ornage);
+            }
+        }
+    }
+}
+
+// ************************************* section ****************************************************
+main{
+    margin-top: 100px;
+    width: 100%;
+    max-width: 100%;
+}
+
+section{
+    width: 100%;
+    max-width: 100%;
+    padding: 2rem 1rem;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.content_text{
+    flex: 1 1 230px;
+    margin: 10px;
+    width: 100%;
+    height: 150px;
+    background-color: var(--ornage);
+    color: var(--black);
+    border-radius: 5px;
+    text-align: center;
+    padding: 1rem;
+    line-height: 50px;
+    transition: all 0.5s ease;
+    transform: translateY(0px);
+    cursor: pointer;
+
+    a{
+        text-decoration: none;
+        color: var(--black);
+
+        &:hover{
+            text-decoration: none;
+            color: var(--black);
+        }
+    }
+
+
+    &:hover{
+        background-color: var(--white);
+        color: var(--black);
+        transition: all 0.5s ease;
+        transform: translateY(-10px);
+    }
+
+    i{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background-color: var(--black);
+        color: var(--white);
+        font-size: 1.50rem;
+        line-height: 40px;
+    }
+}
+
+.locationMap{
+    margin: 95px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+
+    span{
+        color: var(--ornage);
+    }
+}
+
+// *********************************** media queery *********************************************
+/* *************************** end ***************************  */
+@media screen and(max-width: 650px){
+    .bars{
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        top: -100%;
+        left: 0;
+        right: 0;
+        border-top: 2px solid var(--white);
+        width: 100%;
+        max-width: 100%;
+        height: 100vh;
+        display: inline-block;
+        text-align: center;
+        background-color: #111111;
+        color: var(--white);
+        transition: all 0.5s ease;
+        z-index: 99999;
+      }
+
+      ul.active{
+          top: 60px;
+          transition: all 0.5s ease;
+      }
+
+      ul li {
+        margin: 4rem 1rem;
+        list-style: none;
+        font-weight: 600;
+      }
+}
+
+section{
+    padding: 2rem 1rem;
+}
+/* *************************** end ***************************  */

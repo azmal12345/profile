@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap");
+:root {
+  --red: red;
+  --green: green;
+  --yellow: yellow;
+  --lime: lime;
+  --blue: blue;
+  --white: white;
+  --black: black;
+  --ornage: orange;
+  --skyblue: skyblue;
+  --purple: purple;
+  --noneColor: #ff0066;
+}
+
+html, body {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #111111;
+}
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  max-width: 100%;
+  background-color: #111111;
+  padding: 2rem 3rem;
+  z-index: 9999;
+}
+
+.bars {
+  float: right;
+  margin-top: -15px;
+  margin-right: -15px;
+  cursor: pointer;
+  display: none;
+  z-index: 9999;
+}
+
+.bars .line {
+  width: 35px;
+  height: 3px;
+  background-color: var(--ornage);
+  margin: 5px 0;
+}
+
+ul {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+ul li {
+  margin: -10px 1rem;
+  list-style: none;
+  font-weight: 600;
+}
+
+ul li a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+ul li a:hover {
+  text-decoration: none;
+  color: var(--ornage);
+}
+
+main {
+  width: 100%;
+  max-width: 100%;
+}
+
+.top {
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  padding: 2rem 3rem;
+  background-color: #111111;
+}
+
+.top_child {
+  margin-top: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.top_child .top_text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 210px;
+          flex: 1 1 210px;
+}
+
+.top_child .top_text h1 {
+  font-size: 2.10rem;
+  font-weight: bold;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.top_child .top_text h1 span {
+  color: var(--ornage);
+}
+
+.top_child .top_text p {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.top_child .top_text p a {
+  text-decoration: none;
+  color: var(--ornage);
+}
+
+.top_child .top_text .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.top_child .top_text .icon i {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background-color: var(--ornage);
+  color: var(--white);
+  line-height: 41.50px;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.top_child .top_text .icon i:hover {
+  background-color: var(--white);
+  color: var(--black);
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.top_child .top_text .icon .resume_download {
+  background-color: var(--ornage);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.top_child .top_text .icon .resume_download:hover {
+  background-color: var(--blue);
+}
+
+.top_child .top_text .icon .resume_download a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 14px;
+}
+
+.top_child .top_text .icon .resume_download a:hover {
+  color: var(--white);
+}
+
+.top_child .top_text img {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  margin-left: 100px;
+  border-radius: 5px;
+}
+
+.about {
+  width: 100%;
+  max-width: 100%;
+  padding: 2rem 3rem;
+  background-color: #111111;
+}
+
+.about_child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about_text {
+  margin-top: 50px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 250px;
+          flex: 1 1 250px;
+  color: var(--white);
+}
+
+.about_text h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.about_text video {
+  width: 100%;
+}
+
+/* *************************** end ***************************  */
+@media screen and (max-width: 887px) {
+  .top_child .top_text p {
+    font-size: 14px;
+  }
+  .top_child .top_text .icon {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .top {
+    padding: 2rem;
+  }
+}
+
+/* *************************** end ***************************  */
+@media screen and (max-width: 851px) {
+  .top_child .top_text {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 300px;
+            flex: 1 1 300px;
+  }
+  .top_child .top_text .icon {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .top_child .top_text img {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border-radius: 5px;
+  }
+}
+
+/* *************************** end ***************************  */
+@media screen and (max-width: 650px) {
+  .bars {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    top: 60px;
+    left: -100%;
+    right: 0;
+    border-top: 2px solid var(--white);
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+    display: inline-block;
+    text-align: center;
+    background-color: #111111;
+    color: var(--white);
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    z-index: 99999;
+  }
+  ul.active {
+    top: 60px;
+    left: 0;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  ul li {
+    margin: 4rem 1rem;
+    list-style: none;
+    font-weight: 600;
+  }
+}
+
+/* *************************** end ***************************  */
+@media screen and (max-width: 375px) {
+  .top_child .top_text .icon .resume_download {
+    width: 100%;
+    margin-top: 25px;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=index.css.map */
